@@ -9,7 +9,7 @@ function Card(props) {
                         <span className="overlay"></span>
 
                         <div className="card-image">
-                            <img src={props.imga} alt="" class="card-img"></img>
+                            <img src={props.img} alt="" class="card-img"></img>
                         </div>
                     </div>
 

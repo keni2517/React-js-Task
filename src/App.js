@@ -4,20 +4,29 @@ import './Cardp.css';
 import Card from './Component/Cardp';
 import img1 from "./assets/pr1.jpg";
 import img2 from "./assets/pr2.jpg";
-import img3 from "./assets/pr3.jpg"
-
+import img3 from "./assets/pr3.jpg";
+import img4 from "./assets/pr4.jpg";
+import img5 from "./assets/pr.jpg";
+import img6 from "./assets/pr5.jpg";
+import Heading from './Component/Heading';
+import Data from './Component/Data';
 function App() {
   return (
     <>
+    <Heading/>
     <div className="App">
-      <Card imga={img1} bname="View More" des="The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit." name="David Dell" fname="Full Stack devloper"/>
-      <Card imga={img2} bname="View More" des="The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit." name="Rse Bush" fname="Full Stack devloper"/>
-      <Card imga={img3} bname="View More" des="The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit." name="Jones Gail" fname="Full Stack devloper"/>
+      {
+       Data.map((cva,ind) =>{
+        return <Card key={ind} name={cva.name} bname={cva.bname} des={cva.des} fname={cva.fname} img={cva.img}/>
+       })
+      }
     </div>
     <div className="App2">
-      <Card imga={img1} bname="View More" des="The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit." name="David Dell" fname="Full Stack devloper"/>
-      <Card imga={img2} bname="View More" des="The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit." name="Rse Bush" fname="Full Stack devloper"/>
-      <Card imga={img3} bname="View More" des="The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit." name="Jones Gail" fname="Full Stack devloper"/>
+    {
+       Data.map((cva,ind) =>{
+        return <Card key={ind} name={cva.name} bname={cva.bname} des={cva.des} fname={cva.fname} img={cva.imga}/>
+       })
+      }
     </div>
     </>
   );
