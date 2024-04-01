@@ -1,0 +1,15 @@
+.footer-main {
+    position: absolute;
+    top: 1300px;
+    color: #3E8DA8;
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+}
+
+@media (max-width: 600px) {
+    .footer-about, .footer-services, .footer-contact, .footer-follow {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

@@ -6,6 +6,9 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+body{
+  background-color: #EFEFEF;
+}
 .App{
   min-height: 100vh;
   display: flex;
@@ -17,6 +20,9 @@
   min-height: 100vh;
   display: flex;
   justify-content: center;
+  background-color: #EFEFEF;
+}
+.App3{
   background-color: #EFEFEF;
 }
 .slide-container{
@@ -100,4 +106,12 @@
 .overlay::after{
   border-radius: 0 25px 0 0;
   background-color: #FFF;
+}
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
 }
